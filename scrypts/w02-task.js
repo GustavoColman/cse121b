@@ -7,7 +7,8 @@ let fullname=" Gustavo Colman";
 
 let currentYear="2024";
 
-let profilePicture = "w2_task\images\colmanPicture.jpg";
+let profilePicture = "w2_task/images/colmanPicture.jpg";
+
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById('name');
