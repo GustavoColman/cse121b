@@ -7,7 +7,7 @@ let fullname=" Gustavo Colman";
 
 let currentYear="2024";
 
-let profilePicture = './images/colmanPicture.jpg';
+let profilePicture = "images/colmanPicture.jpg";
 
 
 /* Step 3 - Element Variables */
@@ -17,7 +17,7 @@ let foodelement = document.getElementById('food');
 
 let yearElement = document.querySelector ('#year');
 
-let imageElement = document.getElementsByClassName ('img');
+let imageElement = document.querySelector ("img");
 
 
 
