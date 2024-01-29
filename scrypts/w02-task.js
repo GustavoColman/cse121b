@@ -1,53 +1,37 @@
 /* W02-Task - Profile Home Page */
 
-/* Step 1 - Setup type tasks - no code required */
-
 /* Step 2 - Variables */
-let fullname=" Gustavo Colman";
+let fullname = "Gustavo Colman";
+let currentYear = "2024";
+let profilePicture = "images/colmanPicture.png";
+let altelement = "gustavo colman";
+//declaring array
+var favFood = ["pizza", "Hamburger", "coffee with milk"];
 
-let currentYear="2024";
+// Add iten to array
+favFood.push("cookies");
 
-let profilePicture = "images/colmanPicture.jpg";
-
+// Remove iten form array
+favFood.splice(0, 1); // Removing the first item (pizza)
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById('name');
-
 let foodelement = document.getElementById('food');
-
-let yearElement = document.querySelector ('#year');
-
-let imageElement = document.querySelector ("img");
-
-
-
-
-
-
-
-
+let yearElement = document.querySelector('#year');
+let imageElement = document.querySelector("img");
+let source = document.querySelector("img");
 
 /* Step 4 - Adding Content */
-nameElement.innerHTML = `<strong>${fullname}</strong>`;
+document.addEventListener('DOMContentLoaded', function () {
+  // a friend said me to load the dom with this function, i don't know
+  //if i skipp this part on the class but looks like it worked
+  nameElement.innerHTML = `<strong>${fullname}</strong>`;
+  yearElement.textContent = `${currentYear}`;
+  imageElement.setAttribute('src', profilePicture);
+  source.setAttribute ('alt',altelement);
 
-yearElement.textContent = `${currentYear}`;
-
-imageElement.setAttribute('src',profilePicture);
-
-foodelement.innerHTML += `<br>${favFood}`;
-
-
-
-
-
-
-
-/* Step 5 - Array */
-var favFood = ["pizza","Hamburger","coffee with milk"];
-
-
-// só preciso fazer a lista de comidas e fazer a imagem aparecer agora
-
-
-
-
+  // food list
+  favFood.forEach(food => {
+    foodelement.innerHTML += `<br>${food}`;
+  });
+});
