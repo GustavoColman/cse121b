@@ -45,7 +45,7 @@ const multiply = () => {
     //in a arrow function we remove the key word function and add =>
     let multiply1 = Number(document.querySelector('#factor1').value);
     let multiply2 = Number(document.querySelector('#factor2').value);
-    document.querySelector('product').value = multiply(multiply1, multiply2);
+    document.querySelector('#product').value = multiply1 * multiply2;
 }
 
 document.querySelector('#multiplyNumbers').addEventListener('click', multiply);
@@ -54,6 +54,14 @@ document.querySelector('#multiplyNumbers').addEventListener('click', multiply);
 
 
 /* Open Function Use - Divide Numbers */
+const divide = () => {
+    
+    let divide1 = Number(document.querySelector('#dividend').value);
+    let divide2 = Number(document.querySelector('#divisor').value);
+    document.querySelector('#quotient').value = divide1 / divide2;
+}
+
+document.querySelector('#divideNumbers').addEventListener('click', divide);
 
 
 /* Decision Structure */
