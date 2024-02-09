@@ -71,9 +71,8 @@ document.querySelector('#divideNumbers').addEventListener('click', divide);
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
-numbersArray.forEach(array => {
-    arrayelement.innerHTML += `<br>${array}`;
-  });
+//add array to the html 
+arrayelement.innerHTML = `${numbersArray}`;
 
 
 /* Output Odds Only Array */
@@ -81,6 +80,7 @@ numbersArray.forEach(array => {
 /* Output Evens Only Array */
 
 /* Output Sum of Org. Array */
+numbersArray.map
 
 /* Output Multiplied by 2 Array */
 
