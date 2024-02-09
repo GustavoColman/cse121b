@@ -1,6 +1,7 @@
 /* LESSON 3 - Programming Tasks */
 
 /* FUNCTIONS */
+let arrayelement = document.getElementById('array');
 /* Function Definition - Add Numbers */
 
 //this function add numbers of the argument ( ) and return the value of the sum
@@ -69,6 +70,11 @@ document.querySelector('#divideNumbers').addEventListener('click', divide);
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
+let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+numbersArray.forEach(array => {
+    arrayelement.innerHTML += `<br>${array}`;
+  });
+
 
 /* Output Odds Only Array */
 
